@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "github.com/common-nighthawk/go-figure"
 
 func main() {
-	fmt.Println("Ba dum, tss!")
+	myFigure := figure.NewFigure("Hallo", "", true)
+	myFigure.Dance(10000, 200)
+	myFigure.Print()
 }
