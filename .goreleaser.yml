@@ -9,6 +9,10 @@ before:
 builds:
 - env:
   - CGO_ENABLED=0
+  goos:
+    - darwin
+    - windows
+    - linux
 env_files:
   github_token: ./.config/goreleaser/github_token
 archives:
